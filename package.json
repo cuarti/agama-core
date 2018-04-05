@@ -1,0 +1,56 @@
+{
+  "name": "@agama/core",
+  "version": "0.1.0",
+  "description": "Core module for Agama library",
+  "keywords": [
+    "nodejs",
+    "browser",
+    "isomorphic",
+    "typescript",
+    "agama",
+    "utility"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "typings": "src/index",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "npm run test:tslint && npm run test:jest",
+    "test:tslint": "tslint **/*.ts -e '**/*.d.ts' -t verbose",
+    "test:jest": "jest"
+  },
+  "author": {
+    "name": "Albert Cuartiella",
+    "email": "cuarti1992@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuarti/agama-core.git"
+  },
+  "homepage": "https://github.com/cuarti/agama-core#readme",
+  "bugs": {
+    "url": "https://github.com/cuarti/agama-core/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^22.2.2",
+    "@types/node": "^9.6.2",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.2",
+    "ts-node": "^5.0.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "/test/.*(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ]
+  }
+}
